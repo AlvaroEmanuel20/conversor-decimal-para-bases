@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de decimal para bases</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: blueviolet;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            min-width: 320px;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        input, button {
+            padding: 10px 15px;
+            border: 0;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: rebeccapurple;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: rgb(81, 24, 138);
+            transition-duration: 300ms;
+        }
+
+        label {
+            color: white;
+        }
+
+        #result {
+            color: black;
+        }
+
+        #result::placeholder {
+            color: rgba(255, 255, 255, 0.547);
+        }
+
+        a {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>
+            Conversor de decimal para outras bases
+            - Por <a href="https://github.com/alvaroemanuel20">Álvaro</a>
+        </h1>
+
+        
+        <label for="number">Número para converter:</label>
+        <input type="number" name="number" id="number" placeholder="Insira o número">
+
+        <label for="baseD">Base de destino:</label>
+        <input type="number" name="baseD" id="baseD" placeholder="Insira a base de destino">
+
+        <button onclick="baseConverter()">Convert</button>
+
+        <input type="text" name="result" placeholder="Resultado aqui" id="result" disabled>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>
